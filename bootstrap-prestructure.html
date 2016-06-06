@@ -8,6 +8,8 @@
  <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
  <link rel="stylesheet" href="css/style.css">
  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+ <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
   <body>
     <div class="container-fluid">
@@ -15,7 +17,7 @@
         <div class="col-md-6"><img class="icon img-responsive" src="images/icon.png" alt="MartinesWebDesign logo"></div>
         <div class="col-md-6 text-right">
           <h1 class="title">Alexandra Martines</h1>
-          <p class="subtitle"> <span class="subtitle-text">Educator </span>| <span class="subtitle-text middle">Designer </span>| <span class="subtitle-text">Technophile</span></p>
+          <h3 class="subtitle"> <span class="text-bright">Educator </span>| <span class="text-light">Designer </span>| <span class="text-bright">Technophile</span></h3>
         </div>
       </div>
       <div class="row">
@@ -40,19 +42,72 @@
       </div>
       <div class="row featured">
         <div class="col-md-4">
-          <a href="http://integralguesthouse.org" target="_blank"><img class="featured-image img-responsive" src="images/guesthouse.png" alt="Screenshot of Internal Guesthouse website"></a>
+          <img class="featured-image img-responsive" src="images/guesthouse.png" alt="Screenshot of Internal Guesthouse website" data-toggle="modal" data-target="#IntegralGuesthouse">
   				<p class="featured-title text-center">Integral Guesthouse Coaching</p>
         </div>
         <div class="col-md-4">
-          <a href="http://sharonmakesfurniture.com" target="_blank"><img class="featured-image img-responsive" src="images/furniture.png" alt="Screenshot of Sharon C. Mehrman Woodworking website"></a>
+          <img class="featured-image img-responsive" src="images/furniture.png" alt="Screenshot of Sharon C. Mehrman Woodworking website" data-toggle="modal" data-target="#SharonMakesFurniture">
   				<p class="featured-title text-center">Sharon C. Mehrman Woodworking</p>
         </div>
         <div class="col-md-4">
-          <a href="http://peopleseducation.org" target="_blank"><img class="featured-image img-responsive"  src="images/feaa.png" alt="Screenshot of FEAA website"></a>
+          <img class="featured-image img-responsive"  src="images/feaa.png" alt="Screenshot of FEAA website" data-toggle="modal" data-target="#FEAA">
   				<p class="featured-title text-center">The Folk Education Association of America</p>
         </div>
       </div>
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="IntegralGuesthouse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Integral Guesthouse Coaching</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive modal-img" src="images/integral-guesthouse-header.jpg">
+              Launched in August, 2015, this is a fairly standard project for a client who wanted to showcase his life coaching business. My client wanted to be able to work on the site without my help in the future, but also had many creative ideas for design. We were able to balance the custom design elements with simple updating of much of the site content. This was the first site I developed to include secure payment options. <a href="http://integralguesthouse.org" target="_blank">Take a look around the site!</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="SharonMakesFurniture" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Sharon C. Mehrman Woodworking</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive modal-img" src="images/sharon-header.png">
+                This site launched in December, 2015. The client had an existing static site she wanted to transform into a mobile-responsive site that was easy to update through a CMS, but also retained all of the design of the old site. My most ambitious project, this site includes a lot of custom code. <a href="http://sharonmakesfurniture.com" target="_blank">Take a look around the site!</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="FEAA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Folk Education Association of America</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive modal-img" src="images/feaa-header.png">
+                This site launched in April, 2016. This was a complete redesign of a website for a non-profit organization that connects alternative schools in the U.S. The priority on this site was making it easy for the client to update, which required custom post types and some PHP tricks. The <a href="http://www.peopleseducation.org/folk-school-links/" target="_blank">Folk School Network</a> page is one of the major site highlights.
+                <a href="http://peopleseducation.org" target="_blank">Take a look around the site!</a>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <footer>
   <div class="container-fluid">
